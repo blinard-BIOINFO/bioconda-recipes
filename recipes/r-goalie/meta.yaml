@@ -1,4 +1,4 @@
-{% set version = "0.4.6" %}
+{% set version = "0.4.9" %}
 {% set github = "https://github.com/acidgenomics/goalie" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "{{ github }}/archive/v{{ version }}.tar.gz"
-  sha256: ee2aa57dc4e6c800eb073c9d053a35865e9c6d942c35096492eb4b58206f031a
+  sha256: 258ddf69e5bd3c5aaecbace9001598fe4fa8b7fc5d08be43e87ada04f1f70f8d
   
 build:
   number: 0
@@ -18,12 +18,12 @@ requirements:
       # Depends:
     - r-base
       # Imports:
-    - r-acidbase >=0.1.9
+    - r-acidbase >=0.2
   run:
       # Depends:
     - r-base
       # Imports:
-    - r-acidbase >=0.1.9
+    - r-acidbase >=0.2
 
 test:
   commands:
